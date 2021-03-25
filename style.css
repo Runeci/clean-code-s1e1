@@ -33,7 +33,18 @@ body {
 .add-item__input{
     width: 56%;
     display: inline-block;
-    flex-grow: 1
+    flex-grow: 1;
+    outline: none;
+    margin: 0;
+    font-size: 18px;
+    line-height: 18px;
+    height: 21px;
+    padding: 0 9px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 6px;
+    font-family: Lato, sans-serif;
+    color: #888;
 }
 
 
@@ -85,6 +96,7 @@ button:hover {
 
 
 .items__input {
+    display: none;
     outline: none;
     margin: 0;
     font-size: 18px;
@@ -118,9 +130,10 @@ li {
     justify-content: space-between;
     align-items: center;
 }
-li > * {
-    vertical-align: middle;
-}
+
+/*li > * {*/
+/*    vertical-align: middle;*/
+/*}*/
 
 
 .items__checkbox{
@@ -148,15 +161,13 @@ button.delete img:hover {
 }
 
 /* Completed */
-ul#completed-tasks label {
+#completed-tasks label {
     text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
-    display:none
-}
+
 
 ul li.editMode input[type=text] {
     display:inline-block;
