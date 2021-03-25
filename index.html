@@ -6,21 +6,19 @@
     <link rel="stylesheet" href="style.css"  media="screen" charset="utf-8">
 </head>
 <body>
-    <header class="header">
-        <div class="aaa">
-            <img src="./eisenhower-matrix.jpg">
-            <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-        </div>
-        <div class="centered-main-page-element">
-            <div id="topSectionForAddingElementToList">
-                <label for="new-task">Add Item</label>
-                <div class="task-row-wrapper">
-                    <input id="new-task"class="task" type="text">
-                    <button>Add</button></div>
-            </div>
-        </div>
+    <header class="header wrapper">
+        <img class="header__img" src="./eisenhower-matrix.jpg">
+        <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </header>
-    <main class="main">
+    <main class="main wrapper">
+        <section class="add-item">
+            <label class="add-item__label" for="new-task">Add Item</label>
+            <div class="add-item__input-wrapper">
+                    <input class="add-item__input task" id="new-task"type="text">
+                    <button class="add-item__button" >Add</button>
+            </div>
+        </section>
+
         <section class="items">
             <h3>Todo</h3>
             <ul id="incompleteTasks">
@@ -43,6 +41,7 @@
                 </li>
             </ul>
         </section>
+
         <section class="items">
             <h3>Completed</h3>
             <ul id="completed-tasks">
