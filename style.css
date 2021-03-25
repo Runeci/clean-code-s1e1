@@ -18,7 +18,7 @@ body {
 }
 
 @media (max-width:768px) {
-.header{ text-align: center;
+.header { text-align: center;
 }
 }
 .wrapper {
@@ -30,7 +30,7 @@ body {
 .add-item__input-wrapper {
     display: flex;
 }
-.add-item__input{
+.add-item__input {
     width: 56%;
     display: inline-block;
     flex-grow: 1;
@@ -81,7 +81,7 @@ body {
 
 /* Heading */
 
-.add-item__label{
+.add-item__label {
     display: block;
     margin: 0 0 20px;
     color: #333;
@@ -96,7 +96,6 @@ body {
 
 .items__input {
     display: none;
-    outline: none;
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -133,7 +132,7 @@ li {
 /*}*/
 
 
-.items__checkbox{
+.items__checkbox {
     margin: 0 10px;
     outline: none;
 }
