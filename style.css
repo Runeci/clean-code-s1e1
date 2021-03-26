@@ -5,6 +5,35 @@ body {
   font-family: Lato, sans-serif;
 }
 
+.wrapper {
+  display: block;
+  width: 500px;
+  margin: 0 auto 0;
+}
+
+.button {
+  outline: none;
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #3a3A3a;
+}
+
+@media (max-width: 768px) {
+  .header {
+    text-align: center;
+  }
+}
+
+/*Header styles*/
+
 .header {
   width: 500px;
   margin: 0 auto;
@@ -20,17 +49,7 @@ body {
   font-family: fantasy, cursive;
 }
 
-@media (max-width: 768px) {
-  .header {
-    text-align: center;
-  }
-}
-
-.wrapper {
-  display: block;
-  width: 500px;
-  margin: 0 auto 0;
-}
+/*Add item styles*/
 
 .add-item__input-wrapper {
   display: flex;
@@ -41,7 +60,6 @@ body {
   display: inline-block;
   flex-grow: 1;
   outline: none;
-  margin: 0;
   font-size: 18px;
   line-height: 18px;
   height: 21px;
@@ -53,6 +71,18 @@ body {
   color: #888;
 }
 
+.add-item__label {
+  display: block;
+  margin: 0 0 20px;
+  color: #333;
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px solid #333;
+  padding: 30px 0 10px;
+  text-transform: uppercase;
+}
+
+/*Items styles*/
 
 .items__title {
   list-style: none;
@@ -70,35 +100,15 @@ body {
   padding: 0;
 }
 
-
-.button {
-  outline: none;
-  background: none;
-  border: 0px;
-  color: #888;
-  font-size: 15px;
-  width: 60px;
-  font-family: Lato, sans-serif;
-  cursor: pointer;
+.items__item {
+  list-style: none;
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-.button:hover {
-  color: #3a3A3a;
-}
-
-/* Heading */
-
-.add-item__label {
-  display: block;
-  margin: 0 0 20px;
-  color: #333;
-  font-weight: 700;
-  font-size: 15px;
-  border-bottom: 2px solid #333;
-  padding: 30px 0 10px;
-  text-transform: uppercase;
-}
-
 
 .items__input {
   display: none;
@@ -117,17 +127,6 @@ body {
 .items__input:focus {
   color: #333;
 }
-
-/* New Task */
-
-
-/* Task list */
-
-
-/*li > * {*/
-/*    vertical-align: middle;*/
-/*}*/
-
 
 .items__checkbox {
   margin: 0 10px;
@@ -156,13 +155,13 @@ body {
 }
 
 /* Completed */
-#completed-tasks .items__label {
+
+.completed .items__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-
 
 .editMode .items__input {
   display: inline-block;
@@ -174,12 +173,4 @@ body {
 }
 
 
-.items__item {
-  list-style: none;
-  overflow: hidden;
-  padding: 20px 0;
-  border-bottom: 1px solid #eee;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
