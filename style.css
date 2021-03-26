@@ -163,12 +163,12 @@ body {
 
 /* Edit Task */
 
-.editMode .items__input {
+.items__item_edit-mode .items__input {
   display: inline-block;
   width: 224px
 }
 
-.editMode .items__label {
+.items__item_edit-mode .items__label {
   display: none;
 }
 
