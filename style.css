@@ -144,13 +144,13 @@ body {
   color: #cf2323;
 }
 
-.items__button_delete img {
+.items__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.items__button_delete img:hover {
+.items__img:hover {
   transform: rotateZ(0);
 }
 
