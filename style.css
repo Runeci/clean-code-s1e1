@@ -118,15 +118,7 @@ body {
 
 
 /* Task list */
-li {
-    list-style:none;
-    overflow: hidden;
-    padding: 20px 0;
-    border-bottom: 1px solid #eee;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 
 /*li > * {*/
 /*    vertical-align: middle;*/
@@ -158,7 +150,7 @@ li {
 }
 
 /* Completed */
-#completed-tasks label {
+#completed-tasks .items__label {
     text-decoration: line-through;
     color: #888;
 }
@@ -166,11 +158,22 @@ li {
 /* Edit Task */
 
 
-ul li.editMode input[type=text] {
+.editMode .items__input {
     display: inline-block;
     width: 224px
 }
 
-ul li.editMode label {
+.editMode .items__label {
     display: none;
+}
+
+
+.items__item {
+  list-style:none;
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
