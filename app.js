@@ -14,6 +14,7 @@ var incompleteTaskHolder=document.getElementById("incomplete-tasks");//ul of #in
 var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
 
 
+
 //New task list item
 var createNewTaskElement=function(taskString){
 
@@ -65,8 +66,10 @@ var createNewTaskElement=function(taskString){
 var addTask=function(){
     console.log("Add Task...");
     //Create a new list item with the text from the #new-task:
+
     if (!taskInput.value) return;
     var listItem=createNewTaskElement(taskInput.value);
+
 
     //Append listItem to incompleteTaskHolder
     incompleteTaskHolder.appendChild(listItem);
