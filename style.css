@@ -144,7 +144,7 @@ body {
   color: #cf2323;
 }
 
-.items__button_delete  img {
+.items__button_delete  .items__img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
