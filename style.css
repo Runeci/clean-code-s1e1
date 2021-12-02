@@ -27,9 +27,11 @@ body {
 }
 
 @media (max-width: 768px) {
+
   .header {
     text-align: center;
   }
+
 }
 
 /*Header styles*/
@@ -168,7 +170,7 @@ body {
 
 .items__item_edit-mode .items__input {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .items__item_edit-mode .items__label {
